@@ -1,0 +1,8 @@
+.matrix-input {
+    width: 30px; /* Ancho deseado */
+    height: 30px; /* Alto deseado */
+    padding: 3px; /* Elimina el relleno interno */
+    margin: 3px;
+    border: 1px solid black;
+    display: inline-block;
+}

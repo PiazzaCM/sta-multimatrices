@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>MultiMatrices</title>
+  </head>
+  <body>
+    <h2 class="d-flex justify-content-center mb-4 mt-2">
+      Multiplicador de matrices
+    </h2>
+    <div class="d-flex justify-content-center">
+      <div id="dimensions-matriz1" class="col-6">
+        <label for="rows">Filas de la matriz 1:</label>
+        <input type="number" id="rows" />
+
+        <label for="columns">Columnas de la matriz 1:</label>
+        <input type="number" id="columns" />
+      </div>
+      <br />
+      <br />
+      <div id="dimensions-matriz2" class="col-6">
+        <label for="rows">Filas de la matriz 2:</label>
+        <input type="number" id="rows2" />
+
+        <label for="columns">Columnas de la matriz 2:</label>
+        <input type="number" id="columns2" />
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="d-flex justify-content-center ">
+    <button onclick="createMatrices()" class="btn btn-primary">Crear Matrices</button>
+    <button id="myButton " class="btn btn-primary ml-2">Multiplicar Matrices</button>
+    </div>
+    <div class="d-flex justify-content-center">
+    <div id="matrices"></div>
+    <div id="resultado"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
